@@ -1,0 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'XObjCUnderhood', :path => './../', :configurations => ['Debug']
+
+pod 'ObjCJSONLikeDescription', :configurations => ['Debug']
+pod 'ObjCJSONLikeDescription/M13OrderedDictionary', :configurations => ['Debug']
