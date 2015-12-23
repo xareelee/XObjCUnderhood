@@ -111,12 +111,12 @@ static void _printInterfaceThroughHierarchy(XOrderedDict *interfaceLookup, NSStr
   
   if (needsToShowImpClass) {
     [[methods xobjc_sortedAllObjects] enumerateObjectsUsingBlock:^(NSString *methodInfo, NSUInteger idx, BOOL *stop) {
-      printf("\t(%lu) %s%s\t\t{%s}\t@(%s)\n", idx, methodSymbol, methodInfo.UTF8String, [signatureForMethodImp[methodInfo] UTF8String], [(NSArray *)classesForMethodImp[methodInfo] componentsJoinedByString:@", "].UTF8String);
+      printf("\t(%lu) %s%s\t\t{%s}\t@(%s)\n", (unsigned long)idx, methodSymbol, methodInfo.UTF8String, [signatureForMethodImp[methodInfo] UTF8String], [(NSArray *)classesForMethodImp[methodInfo] componentsJoinedByString:@", "].UTF8String);
     }];
     
   } else {
     [[methods xobjc_sortedAllObjects] enumerateObjectsUsingBlock:^(NSString *methodInfo, NSUInteger idx, BOOL *stop) {
-      printf("\t(%lu) %s%s\t\t{%s}\n", idx, methodSymbol, methodInfo.UTF8String, [signatureForMethodImp[methodInfo] UTF8String]);
+      printf("\t(%lu) %s%s\t\t{%s}\n", (unsigned long)idx, methodSymbol, methodInfo.UTF8String, [signatureForMethodImp[methodInfo] UTF8String]);
     }];
     
   }

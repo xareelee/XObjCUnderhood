@@ -245,9 +245,8 @@ void xobjc_underhood_setup()
   __superProtocolSetLookup__      = [XOrderedDict orderedDictionaryWithObjects:superProtocolSets forKeys:protocolNamesWithoutRootKey];
   __classesForProtocolSetLookup__ = [XOrderedDict orderedDictionaryWithObjects:classesForProtocolSets forKeys:protocolNamesWithoutRootKey];
   
-  
-  NSLog(@"[XObjCUnderhood] Classes count: %ld/%d (containing the additional key `$root_classes` (kXObjCUnderhoodRootClassKey) for root classes)\n", uniqueClassNames.count -1, numberOfClasses);
-  NSLog(@"[XObjCUnderhood] Protocol count: %ld/%d (containing the additional key `$root_protocols` (kXObjCUnderhoodRootProtocolKey) for root protocols)\n", uniqueProtocolNames.count -1, numberOfProtocols);
+  NSLog(@"[XObjCUnderhood] Classes count: %d/%u (containing the additional key `$root_classes` (kXObjCUnderhoodRootClassKey) for root classes)\n", (int)(uniqueClassNames.count -1), numberOfClasses);
+  NSLog(@"[XObjCUnderhood] Protocol count: %d/%u (containing the additional key `$root_protocols` (kXObjCUnderhoodRootProtocolKey) for root protocols)\n", (int)(uniqueProtocolNames.count -1), numberOfProtocols);
 }
 
 
