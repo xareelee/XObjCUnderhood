@@ -17,9 +17,9 @@ PODS:
   - XAspect/Core (1.0.5):
     - XAspect/Macros
   - XAspect/Macros (1.0.5)
-  - XObjCUnderhood (1.0.0):
-    - XObjCUnderhood/Core (= 1.0.0)
-  - XObjCUnderhood/Core (1.0.0):
+  - XObjCUnderhood (1.0.1):
+    - XObjCUnderhood/Core (= 1.0.1)
+  - XObjCUnderhood/Core (1.0.1):
     - M13OrderedDictionary
 
 DEPENDENCIES:
@@ -35,6 +35,6 @@ SPEC CHECKSUMS:
   M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
   ObjCJSONLikeDescription: 989b864acb4d876ca5e7b7ae12be9ac59f06c86e
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
-  XObjCUnderhood: 916fd820cca3f0600acfb54927ea604e8931fbbd
+  XObjCUnderhood: e9fe8c5cd5fa77f275886294e9289a4308cb7a75
 
 COCOAPODS: 0.39.0

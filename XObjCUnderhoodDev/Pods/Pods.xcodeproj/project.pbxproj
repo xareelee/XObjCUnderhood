@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C8B57DE946A07F2BC09D5642D2CA409 /* XObjCUnderhoodBasics.h in Headers */ = {isa = PBXBuildFile; fileRef = F29EA8AD04BB1AD5CDB580E557082552 /* XObjCUnderhoodBasics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12A98F672C9C6924268A604882113195 /* M13OrderedDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBBD6DB18A10838B03F2170886F3 /* M13OrderedDictionary-dummy.m */; };
+		1863E0811EE8B73CE72DDF0E13222B27 /* XObjCUnderhood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B642FC9717100C0C29084AE96044142 /* XObjCUnderhood-dummy.m */; };
 		1CD0DE595635AD2C747401786500F6EF /* XObjCUnderhood.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B715E0339EB4A8B99AE407206115991 /* XObjCUnderhood.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E10ECC88B10553D451CCEC0A5BF2F83 /* XAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = B522A1C7F8388103782035E59B18608E /* XAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2498B2B58DC4516337514EB84681464A /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC8E326FE848F9B86B2BB7071BE9E4 /* Aspect-Foundation+UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -17,30 +18,29 @@
 		30971D3351B09BF20C0E50CA1C6F352A /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 64129570FEED7054783A3DD9D1210324 /* Aspect-M13OrderedDictionary+UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		30A411F331AF96278E38C03C3AD06715 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
 		3BD36325056E5CEFE7F39F896025C31B /* XACrystallization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 541FE18A54C23B078894810CAD0F60D4 /* XACrystallization.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3F30EF3D03F20CEDBE083B56F32CB0F8 /* XObjCUnderhoodBasics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AE9E893996DF0DADA1490B83E735AC /* XObjCUnderhoodBasics.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4D7FB0BFA5BA0CACBCA09C47BACE20C2 /* XObjCUnderhoodOverloadables.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D2169539AE81A62BA51CE1A150EF3 /* XObjCUnderhoodOverloadables.m */; };
 		503A2F4A0078EE5BB33FD2C351A56067 /* XAObjcMetaprogramming.h in Headers */ = {isa = PBXBuildFile; fileRef = 928516C6D07FE4A51E358382055C5AA0 /* XAObjcMetaprogramming.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567B86036D26EBD27F112C30D5F9973C /* XObjCUnderhoodLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D28258F3EFDB4BF6FBB3FBBE980DE44 /* XObjCUnderhoodLogger.m */; };
 		59C799A91D8E02BD3B093C154D86CCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		61AEC0EC0EC92ACAFA9081459778D15E /* XObjCUnderhood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B642FC9717100C0C29084AE96044142 /* XObjCUnderhood-dummy.m */; };
 		6B48B257122F7463B16FD544D5D57D64 /* XACrystallization.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E63D4254B82DD88F9012E4A0239114 /* XACrystallization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72F943E695481B127E6E315ABA6DD569 /* XObjCUnderhoodLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D28258F3EFDB4BF6FBB3FBBE980DE44 /* XObjCUnderhoodLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		77985CDC2F2D9218AD028D9A4DC5DD1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		77C36A58FCF54DEE43046DAE471C2D0E /* XObjCUnderhoodLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA22A18C9EC5FE80751E99D63CE07E6 /* XObjCUnderhoodLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B045D5C57F12C5A2C04949C0567112B /* XObjCUnderhoodBasics.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AE9E893996DF0DADA1490B83E735AC /* XObjCUnderhoodBasics.m */; };
 		84BE73D7868EFF5A4770ECF8CD3F0149 /* UnicodifyingDescriptionsOfObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = ED41C3F570AC631CF4BDEB29A2BF62D8 /* UnicodifyingDescriptionsOfObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862103DED510DB77AAFAAE5EDB8CFC15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		87CE9B736A87A75E083EC9D366D88125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		880466C7595CD3D035A20D4FC18554C1 /* XADebugMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3650DB08B64DBB80E922277E9364581E /* XADebugMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		889E1469D5469B39274B246CD23CBA17 /* XObjCUnderhoodDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB0B9AFA883FE042126B2F0448587D /* XObjCUnderhoodDefinitions.m */; };
 		9493134BE40C76DD9E4902C31857021D /* XACExtensions.c in Sources */ = {isa = PBXBuildFile; fileRef = C533C2ADC5212814E5BA0F0000DB985D /* XACExtensions.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AD6B19B3489C9AA1D400D16C69AB7EFA /* ObjCJSONLikeDescription-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9870F81341F9174535FABC6AE13B61F2 /* ObjCJSONLikeDescription-dummy.m */; };
 		B652F779CB26AC4C20D555E73D3B4D7B /* UnicodifyingDescriptionsOfObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = AC100AC33FE9E985AD5002CF752BAAEA /* UnicodifyingDescriptionsOfObjects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C2E8542DE3D259215CBACF75BB4919DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		C75DBA714E7E5F92BCDB48FF3DA7AE8C /* M13OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C84536D2AC71D655685418E0DCE65F /* M13OrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFE847C7E88DC9AD5F6775BB0615C094 /* XObjCUnderhoodDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB0B9AFA883FE042126B2F0448587D /* XObjCUnderhoodDefinitions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D393C09574FBE84E4F2015CFC80BDA7C /* XObjCUnderhoodOverloadables.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C49AF6603FA4D5EC74DAF862D33132 /* XObjCUnderhoodOverloadables.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEC65B7D7678ABA0BB93DB9C267ECE96 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F0273FC8CF958EFDB722E46EAAC2FEE6 /* M13OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DF6CE3E96F19F78846C382F06160E370 /* XAFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D406B491B84B8F383417D907B70A277 /* XAFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E31F714F16250293B65D7F69505BC1FA /* XAWeaveHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C3A8397EE9768F5BD5477260FFF63B /* XAWeaveHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6347664BE017AFD4BBEC5DDD3813840 /* XAExtObjcMetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E62053379CA91293727B8EA2929725 /* XAExtObjcMetamacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFC632EC48698081795D23E216C4F901 /* XObjCUnderhoodOverloadables.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D2169539AE81A62BA51CE1A150EF3 /* XObjCUnderhoodOverloadables.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F0811C2445BF395DD9DD2135AEBDFF19 /* XObjCUnderhoodDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = B731A3FEBB8576F0B861241DF69B0EC3 /* XObjCUnderhoodDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F20971FE51E6246266258845FF477C6C /* XAspect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FAB7A7F531A1607C5FB592102FCA59 /* XAspect-dummy.m */; };
 /* End PBXBuildFile section */
@@ -570,7 +570,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EE537E3B26F1F3A087328A5650BFA7E /* Build configuration list for PBXNativeTarget "XObjCUnderhood" */;
 			buildPhases = (
-				B059A79C5DA269BE272AF87D62D3E218 /* Sources */,
+				54F13740FFB7FA43577D179D5925ABBE /* Sources */,
 				14E9A8514C3E6271CDA1D8B4B7A6E175 /* Frameworks */,
 				E419A2AEF1DF59B65B4A34894E914C93 /* Headers */,
 			);
@@ -654,15 +654,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B059A79C5DA269BE272AF87D62D3E218 /* Sources */ = {
+		54F13740FFB7FA43577D179D5925ABBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61AEC0EC0EC92ACAFA9081459778D15E /* XObjCUnderhood-dummy.m in Sources */,
-				3F30EF3D03F20CEDBE083B56F32CB0F8 /* XObjCUnderhoodBasics.m in Sources */,
-				CFE847C7E88DC9AD5F6775BB0615C094 /* XObjCUnderhoodDefinitions.m in Sources */,
-				72F943E695481B127E6E315ABA6DD569 /* XObjCUnderhoodLogger.m in Sources */,
-				EFC632EC48698081795D23E216C4F901 /* XObjCUnderhoodOverloadables.m in Sources */,
+				1863E0811EE8B73CE72DDF0E13222B27 /* XObjCUnderhood-dummy.m in Sources */,
+				7B045D5C57F12C5A2C04949C0567112B /* XObjCUnderhoodBasics.m in Sources */,
+				889E1469D5469B39274B246CD23CBA17 /* XObjCUnderhoodDefinitions.m in Sources */,
+				567B86036D26EBD27F112C30D5F9973C /* XObjCUnderhoodLogger.m in Sources */,
+				4D7FB0BFA5BA0CACBCA09C47BACE20C2 /* XObjCUnderhoodOverloadables.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

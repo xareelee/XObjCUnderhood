@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '71C378955795AC96538A0B74'
+               BlueprintIdentifier = 'CCBC31C4DDB2648C736DB3CB'
                BlueprintName = 'XObjCUnderhood'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXObjCUnderhood.a'>

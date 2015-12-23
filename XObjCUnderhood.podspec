@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'XObjCUnderhood'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.license      = 'MIT'
   s.summary      = 'Disclose the Objective-C classes/interfaces under the hood'
   s.homepage     = 'https://github.com/xareelee/XObjCUnderhood'
