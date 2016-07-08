@@ -176,6 +176,6 @@ Print all interfaces through the class hierarchy.
     - <xareelee@gmail.com>
 
 ### License
-XAspect is available under the MIT license. See the [LICENSE](LICENSE.md) file for more info.
+XObjCUnderhood is available under the MIT license. See the [LICENSE](LICENSE.md) file for more info.
 
 
