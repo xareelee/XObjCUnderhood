@@ -1,15 +1,16 @@
 # XObjCUnderhood
 
-**XObjCUnderhood** is a library which utilizes the Obj-C runtime to understand the Obj-C class hierarchy, methods, and protocols in the runtime. It's useful to study a framework or a third-party library.
+**XObjCUnderhood** is a library which utilizes the Obj-C runtime to understand the Obj-C class hierarchy, methods, and protocols at runtime. It's useful to study a framework or a third-party library.
 
-For example, you could discover all subclasses of `UIButton`:
+For example, you could discover all subclasses of `UIButton` by using the `xobjc_log` function:
 
 ```objc
+// .m file
 xobjc_logSubclassesForClass("UIButton");
 ```
 
-```
-// Output
+```objc
+// Xcode debug console
 * UIButton
   * CNPropertyLabelButton
   * CNQuickActionButton
@@ -21,20 +22,23 @@ xobjc_logSubclassesForClass("UIButton");
   ...
 ```
 
-or find all classes (and their subclasses) which adopt the protocol `UITableViewDataSource`:
+or print out the objects (`po` command) of the results at runtime: 
 
 ```objc
-xobjc_logAllClassesForProtocol("UITableViewDataSource");
+// Xcode debug console
+(lldb) po xobjc_subclassesOfClass("UIButton")
+{
+	"UIAlertButton": {
+		"UIAlertLabeledButton": {},
+		"UIAlertMediaButton": {}
+	},
+	"UICalloutBarButton": {},
+	"UIDictationMeterView": {},
+	"UIKeyboardButton": {},
+    ...
+}
 ```
 
-```
-* ABAccountsAndGroupDataSource: {}
-* ABCardPropertyPicker: {}
-* ABItemLabelPicker: {}
-* ABMembersDataSource: {}
-* ABMembersFilteredDataSource: {}
-...
-```
 
 For more information, please refer to the section "Very useful XObjCUnderhood functions".
 
@@ -65,6 +69,8 @@ pod 'ObjCJSONLikeDescription/M13OrderedDictionary', :configurations => ['Debug']
 You should set up XObjCUnderhood library in either `application:didFinishLaunchingWithOptions:` or **lldb/gdb** before using any XObjCUnderhood functions:
 
 ```objc
+// .m file
+#import <XObjCUnderhood/XObjCUnderhood.h>
 xobjc_underhood_setup();
 // or in lldb/gdb
 (lldb) po xobjc_underhood_setup()
@@ -85,6 +91,7 @@ For the sake of convenience, it's recommended to use XObjCUnderhood library in t
 You could find many useful functions in the *XObjCUnderhoodBasics.h* or *XObjCUnderhoodOverloadables.h*. XObjCUnderhood use C11 overloadable to make those functions take either a class/protocol type or a class/protocol name.
 
 ```objc
+// .m file
 // pass a protocol object
 xobjc_logAllClassesForProtocol(@protocol(UITableViewDataSource));
 // or a protocol name
